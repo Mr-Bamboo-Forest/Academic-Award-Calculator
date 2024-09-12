@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Academic Award Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="pfp.jpg">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Academic Award Calculator</h1>
+            <div class="form-container">
+                <label for="englishgrade">English:</label>
+                <input name="englishgrade" id="englishgrade" type="number" placeholder="Enter grade" min="0" max="100">
+                
+                <label for="mathgrade">Mathematics:</label>
+                <input name="mathgrade" id="mathgrade" type="number" placeholder="Enter grade" min="0" max="100">
+
+                <select name="elective_1" id="elective_1"> 
+                    <option value="" selected disabled hidden>Select Elective 1:</option> 
+                    <option>Digital Solutions</option> 
+                    <option>Physics</option> 
+                    <option>Biology</option>
+                    <option>Health</option>
+                    <option>Chinese</option>
+                    <option>Legal Studies</option> 
+                </select>
+                <input name="elective_1grade" id="elective_1grade" type="number" placeholder="Enter grade" min="0" max="100">
+                
+                <select name="elective_2" id="elective_2"> 
+                    <option value="" selected disabled hidden>Select Elective 2:</option> 
+                    <option>Physical Educatin</option> 
+                    <option>Psychology</option>
+                    <option>Drama</option>
+                    <option>Specialist</option> 
+                    <option>Geography</option> 
+                </select>
+                <input name="elective_2grade" id="elective_2grade" type="number" placeholder="Enter grade" min="0" max="100">
+                
+                <select name="elective_3" id="elective_3"> 
+                    <option value="" selected disabled hidden>Select Elective 3:</option> 
+                    <option>Chemistry</option> 
+                    <option>Music</option> 
+                    <option>Business</option> 
+                    <option>Modern History</option> 
+                </select>
+                <input name="elective_3grade" id="elective_3grade" type="number" placeholder="Enter grade" min="0" max="100">
+                
+                <select name="elective_4" id="elective_4"> 
+                    <option value="" selected disabled hidden>Select Elective 4:</option> 
+                    <option>Biology</option> 
+                    <option>Economics</option> 
+                    <option>Engineering</option> 
+                    <option>Food & Nutrition</option>
+                    <option>Visual Arts</option>  
+                </select>
+                <input name="elective_4grade" id="elective_4grade" type="number" placeholder="Enter grade" min="0" max="100">
+
+                <button onclick="submit()">Submit Grades</button>
+                <p id="returnaverage"></p>
+                <p id="returnaward"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
